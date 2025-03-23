@@ -28,3 +28,18 @@ A **full-stack CRUD application** for managing employees, built using **Spring B
 ```sh
 git clone https://github.com/yourusername/employee-management-system.git
 cd employee-management-system
+
+cd employeeManagement
+mvn clean install
+mvn spring-boot:run
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/employeedb
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+
+
+cd ../employeemanagementsystem-ui
+npm install
+npm start
+
